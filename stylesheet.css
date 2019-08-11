@@ -1,0 +1,86 @@
+.bg-main {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #282828;
+    height: auto;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.font-icon-profile {
+    font-size: 128px; 
+    margin: auto;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+.display-icon i{
+    animation: display 5s ;
+    text-shadow: -3px 3px 3px rgb(29, 29, 29);
+}
+@keyframes display {
+    0%   {color: rgba(219, 219, 219, 0.1); text-shadow: none}
+    100% {color: rgba(255, 255, 255, 0.9)}
+}
+.font-icon {
+    color: rgba(255, 255, 255, 0.9);
+}
+.font-icon:hover{
+    color: white;
+    text-shadow: -6px 6px 6px rgb(29, 29, 29);
+    animation: rotate-icon 2s;
+}
+@keyframes rotate-icon {
+    0%    {transform: none}
+    12.5% {transform: rotate(0deg)}
+    25%   {transform: rotate(18deg)}
+    37.5% {transform: rotate(-18deg)}
+    50%   {transform: rotate(9deg)}
+    62.5% {transform: rotate(-9deg)}
+    75%   {transform: rotate(4.5deg)}
+    87.5% {transform: rotate(-4.5deg)}
+    100%  {transform: rotate(0deg)}
+}
+
+.text-profile {
+    font-family: monospace;
+    white-space: nowrap;
+    text-shadow: -3px 3px 3px rgb(29, 29, 29);
+    text-align: center;
+}
+.line-profile{
+    width: var(--width);
+    border-right: 2px solid rgba(255,255,255,.75);
+    overflow: hidden;
+    margin: 0 auto;
+    animation: 
+        typing 3s steps(var(--steps)),
+        cursor 500ms steps(var(--steps)) infinite;
+}
+@keyframes typing {
+    0% { width: 0ch; }
+}
+@keyframes cursor {
+    from {border-right-color: rgba(255,255,255,.75);}
+    to   {border-right-color: transparent;}
+}
+.see-more{
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: none;
+    animation: text-see-more 6s;
+}
+.see-more i{
+    color: #282828;
+    text-shadow: none;
+    animation: icon-see-more 2s infinite;
+    animation-delay: 6s
+}
+@keyframes text-see-more{
+    0%   {color: #282828;}
+    50%  {color: #282828}
+    100% {color: rgba(255, 255, 255, 0.9)}
+}
+@keyframes icon-see-more {
+    from {color: #282828;}
+    to   {color: rgba(255, 255, 255, 0.9)}
+}

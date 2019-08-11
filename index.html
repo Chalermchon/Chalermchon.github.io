@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chalermchon is my name.</title>
+    <title>CHALERMCHON is my name.</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2aabd921ad.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #343434">
+        <a class="navbar-brand" href="">CHALERMCHON</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">CSS Note</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-main">
+        <div class="container">
+            <div class="row" style="margin-bottom: 50px">
+                <div class="col-sm-4">
+                    <img src="img-profile.jpg" alt="Chalermchon" style="height: 525px; box-shadow: 5px 5px 5px rgb(29, 29, 29)">
+                </div>
+                <div class="col-sm-8">
+                    <div class="text-profile">
+                        <h1 class="line-profile" style="--width: 12ch; --steps: 12;">Hello World</h1>
+                        <br>
+                        <h4 class="line-profile" style="--width: 24ch; --steps: 22;">NAME: Chalermchon Onbua</h4>
+                        <h4 class="line-profile" style="--width: 21ch; --steps: 21;">DOB : 12 August 1998</h4>
+                        <h4 class="line-profile" style="--width: 13ch; --steps: 13;" id="age"></h4>
+                        <script>
+                            var date = new Date().getFullYear() - 1998;
+                            document.getElementById("age").innerHTML = 'AGE : ' + date + " y/o";
+                        </script>
+                        <br>
+                        <h3 class="line-profile" style="--width: 41ch; --steps: 41;">COMPUTER SCIENCCE - KASETSART UNIVERSITY</h3>
+                        <br>
+                        <br>
+                        <h2 class="line-profile" style="--width: 23ch; --steps: 23;">You can call me EARTH.</h2>
+                        <br>
+                        <span class="font-icon-profile display-icon">
+                            <a href="https://www.facebook.com/ChalermchonEarth" ><i class="fab fa-facebook-square font-icon"></i></a>
+                            <a href="https://www.instagram.com/chalermchon_/" ><i class="fab fa-instagram font-icon"></i></a>
+                            <a href="https://github.com/Chalermchon" ><i class="fab fa-github-square font-icon"></i></a>
+                        </span>
+                        <p class="see-more"><i class="fas fa-angle-double-down" style="font-size: 10px"></i> my film picture <i class="fas fa-angle-double-down" style="font-size: 10px"></i></p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    HELLO
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
