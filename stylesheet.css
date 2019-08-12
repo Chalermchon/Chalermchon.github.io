@@ -1,3 +1,9 @@
+/* Set TEXT CENTER */
+.text-center {
+    text-align: center;
+}
+
+/* Background Page */
 .bg-main {
     padding-top: 80px;
     padding-bottom: 50px;
@@ -7,6 +13,30 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* Text About me */
+.text-profile {
+    font-family: monospace;
+    white-space: nowrap;
+    text-shadow: -3px 3px 3px rgb(29, 29, 29);
+}
+.line-profile{
+    width: var(--width);
+    border-right: 2px solid rgba(255,255,255,.75);
+    overflow: hidden;
+    margin: 0 auto;
+    animation: 
+        typing 3s steps(var(--steps)),
+        cursor 500ms steps(var(--steps)) infinite;
+}
+@keyframes typing {
+    0% { width: 0ch; }
+}
+@keyframes cursor {
+    from {border-right-color: rgba(255,255,255,.75);}
+    to   {border-right-color: transparent;}
+}
+
+/* Font Icon */
 .font-icon-profile {
     font-size: 128px; 
     margin: auto;
@@ -42,28 +72,7 @@
     100%  {transform: rotate(0deg)}
 }
 
-.text-profile {
-    font-family: monospace;
-    white-space: nowrap;
-    text-shadow: -3px 3px 3px rgb(29, 29, 29);
-    text-align: center;
-}
-.line-profile{
-    width: var(--width);
-    border-right: 2px solid rgba(255,255,255,.75);
-    overflow: hidden;
-    margin: 0 auto;
-    animation: 
-        typing 3s steps(var(--steps)),
-        cursor 500ms steps(var(--steps)) infinite;
-}
-@keyframes typing {
-    0% { width: 0ch; }
-}
-@keyframes cursor {
-    from {border-right-color: rgba(255,255,255,.75);}
-    to   {border-right-color: transparent;}
-}
+/* Text See more */
 .see-more{
     color: rgba(255, 255, 255, 0.9);
     text-shadow: none;
@@ -83,4 +92,51 @@
 @keyframes icon-see-more {
     from {color: #282828;}
     to   {color: rgba(255, 255, 255, 0.9)}
+}
+
+/* Link Instragram Film Picture */
+.link-ig-film{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.link-ig-film:hover {
+    animation: snap 1s;
+}
+@keyframes snap {
+    0%   {color: rgba(255, 255, 255, 0.5)}
+    100%  {color: white}
+}
+.link-ig-film:visited{
+    color: white;
+    background-color: white;
+    text-decoration: none;
+    width: 50px;
+}
+
+/* Film Picture */
+.pic-film {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+    padding: 5px;
+    background-color: white;
+    opacity: 0.7;
+}
+.pic-film:hover {
+    /* box-shadow: 3px 3px #282828; */
+    /* animation: rotate-pic 1s; */
+    transform: scale(1.025);
+    opacity: 1;
+}
+@keyframes rotate-pic {
+    0%    {transform: none}
+    12.5% {transform: rotate(0deg)}
+    25%   {transform: rotate(18deg)}
+    37.5% {transform: rotate(-18deg)}
+    50%   {transform: rotate(9deg)}
+    62.5% {transform: rotate(-9deg)}
+    75%   {transform: rotate(4.5deg)}
+    87.5% {transform: rotate(-4.5deg)}
+    100%  {transform: rotate(0deg)}
 }
