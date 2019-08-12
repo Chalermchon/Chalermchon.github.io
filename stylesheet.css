@@ -4,14 +4,18 @@
 }
 
 /* Background Page */
-.bg-main {
+.bg {
     padding-top: 80px;
-    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 53px;
     background-color: #282828;
     height: auto;
 
     color: rgba(255, 255, 255, 0.9);
 }
+
+/*-------------------------------------------------------------------------------------------------*/
 
 /* Text About me */
 .text-profile {
@@ -74,7 +78,7 @@
 
 /* Text See more */
 .see-more{
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 91, 0.877);
     text-shadow: none;
     animation: text-see-more 6s;
 }
@@ -87,11 +91,11 @@
 @keyframes text-see-more{
     0%   {color: #282828;}
     50%  {color: #282828}
-    100% {color: rgba(255, 255, 255, 0.9)}
+    100% {color: rgba(255, 255, 91, 0.877)}
 }
 @keyframes icon-see-more {
     from {color: #282828;}
-    to   {color: rgba(255, 255, 255, 0.9)}
+    to   {color: rgba(255, 255, 91, 0.877)}
 }
 
 /* Link Instragram Film Picture */
@@ -126,4 +130,12 @@
 .pic-film:hover {
     transform: scale(1.025);
     opacity: 1;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+.text-in-li{
+    padding-top: 15px;
+    padding-left: 20px;
+    line-height: 5px;
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2aabd921ad.js"></script>
+    <link rel="stylesheet" href="./stylesheet.css">
+
+    <title>Chalermchon: CSS specificity</title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #343434">
+        <a class="navbar-brand" href="https://chalermchon.github.io/">CHALERMCHON</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="https://chalermchon.github.io/css-specificity.html">CSS specficity</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="bg">
+        <div class="text-center">
+            <h1> CSS specificity </h1>
+            <br>
+            <div style="color: rgba(255, 255, 255, 0.7)">
+                <h5> คือ การที่นำ CSS selector แต่ละชนิดมาใช้ </h5>
+                <h5> โดยที่แต่ละตัวก็มีความสำคัญต่างกัน </h5>
+            </div>
+        </div>
+       <div>
+           <h2>CSS selector</h2>
+           <ul>
+                <li>Element Selector</li>
+                    <div class="text-in-li">
+                        <p>  คือ Tag ต่างๆ ซึ่งจะทำให้ทุก Tag มี Style เป็นไปตามนั้น</p>
+                        <p>มีความสำคัญต่ำสุด</p>
+                        <p>EX: p { ... }
+                    </div>
+                <li>Class Selector</li>
+                    <div class="text-in-li">
+                        <p>  คือ การระบุที่ Attribute Name "Class" ของ Tag นั้นๆ ตามชื่อนั้นๆ</p>
+                        <p>มีความสำคัญขึ้นมามากกว่า Element </p>
+                        <p>EX: .sth-class { ... }</p>
+                    </div>
+                <li>ID Selector</li>
+                    <div class="text-in-li">
+                        <p>  คือ การระบุที่ Attribute Name "ID" ของ Tag นั้นๆ ตามชื่อนั้นๆ</p>
+                        <p>มีความสำคัญขึ้นมามากกว่า Class </p>
+                        <p>EX: #sth-id { ... }</p>
+                    </div>
+           </ul>
+       </div>
+
+    </div>
+    
+</body>
+</html>
